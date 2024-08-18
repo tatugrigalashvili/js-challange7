@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array1 = [1, 2, 3, 4, 5];
+        var array2 = [7, 8, 9, 10];
+        var array3 = [17, 23, 45, 67];
+
+
+        function sevenBoom(arr) {
+        for (let num of arr) {
+            if (num.toString().includes('7')) {
+                return 'ჩანს';
+            }else{
+            return 'ამ მასივში ციფრი 7-იანი არსად ჩანს';
+        }
+        }
+    }
+    
+    document.write(sevenBoom(array1) + "<br>"); 
+    document.write(sevenBoom(array2) + "<br>"); 
+    document.write(sevenBoom(array3)); 
+    </script>
+</body>
+</html>
